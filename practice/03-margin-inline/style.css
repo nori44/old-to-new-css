@@ -8,15 +8,14 @@
    💡 空欄（: の後ろ）に値を入力してください。
 */
 
-.container {
+.section {
   /* margin-inline: auto で左右中央寄せ */
   margin-inline: ;
+  /* width: min(800px, 100%) で最大幅を制限しつつレスポンシブ */
+  width: ;
   /* padding-inline に clamp() でレスポンシブな横余白を
      → 例: clamp(16px, 4vw, 40px) */
   padding-inline: ;
-}
-
-.section {
   /* padding-block: 値 で上下パディングをまとめて指定
      → 例: 64px */
   padding-block: ;

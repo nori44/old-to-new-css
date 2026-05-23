@@ -9,6 +9,10 @@
     body {
       font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif;
       padding: 40px;
+    }
+    .container {
+      max-width: 1200px;
+      margin-inline: auto;
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
@@ -31,17 +35,19 @@
 </head>
 <body>
   <h1>04 CSS変数・ネスト 実践</h1>
-  <div class="card">
-    <h2>カードの見出し</h2>
-    <p>CSS変数で色・余白を一元管理できます。</p>
-  </div>
-  <div class="card">
-    <h2>別のカード</h2>
-    <p>ホバーすると opacity が変わります。</p>
-  </div>
-  <div class="card">
-    <h2>3つ目のカード</h2>
-    <p>:root の変数を変えるだけで全体が一括変更されます。</p>
+  <div class="container">
+    <div class="card">
+      <h2>カードの見出し</h2>
+      <p>CSS変数で色・余白を一元管理できます。</p>
+    </div>
+    <div class="card">
+      <h2>別のカード</h2>
+      <p>ホバーすると opacity が変わります。</p>
+    </div>
+    <div class="card">
+      <h2>3つ目のカード</h2>
+      <p>:root の変数を変えるだけで全体が一括変更されます。</p>
+    </div>
   </div>
 </body>
 </html>
