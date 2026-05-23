@@ -19,9 +19,6 @@
   /* padding-block: 値 で上下パディングをまとめて指定
      → 例: 64px */
   padding-block: ;
-  /* margin-block-end: 値 で下マージンのみを指定
-     → 例: 40px */
-  margin-block-end: ;
 }
 
 .card {
