@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 Container Queries 実践</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      padding: 40px;
+    }
+    .hint {
+      margin-bottom: 16px;
+      font-size: 0.85em;
+      color: #64748b;
+    }
+    /* wrapper を右下ドラッグでリサイズ可能にする */
+    .card-wrapper {
+      resize: horizontal;
+      overflow: hidden;
+      border: 2px dashed #94a3b8;
+      padding: 16px;
+      min-width: 200px;
+      max-width: 100%;
+    }
+    .card {
+      background: #eff6ff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-thumb {
+      width: 200px;
+      height: 150px;
+      background: #bfdbfe;
+      flex-shrink: 0;
+    }
+    .card-body {
+      padding: 16px;
+    }
+    .card-body h2 {
+      margin: 0 0 8px;
+      font-size: 1.1em;
+      color: #1e40af;
+    }
+    .card-body p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+  <h1>05 レスポンシブ 実践</h1>
+  <p class="hint">💡 点線のボックスの右下をドラッグして幅を変えると Container Queries の動きを確認できます</p>
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="card-thumb"></div>
+      <div class="card-body">
+        <h2>カードのタイトル</h2>
+        <p>親コンテナが 600px 以上になると横並びレイアウトに切り替わります。</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

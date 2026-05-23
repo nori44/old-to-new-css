@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 grid 実践</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      padding: 40px;
+    }
+    .card {
+      background: #e2e8f0;
+      padding: 20px;
+      border-radius: 8px;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+      color: #334155;
+    }
+    .wide { background: #bfdbfe; }
+    .tall { background: #bbf7d0; }
+  </style>
+</head>
+<body>
+  <h1>02 grid 実践</h1>
+  <div class="cards">
+    <div class="card">カード 1</div>
+    <div class="card wide">カード 2（wide: 2列分）</div>
+    <div class="card">カード 3</div>
+    <div class="card tall">カード 4（tall: 2行分）</div>
+    <div class="card">カード 5</div>
+    <div class="card">カード 6</div>
+  </div>
+</body>
+</html>

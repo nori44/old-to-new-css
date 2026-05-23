@@ -1,0 +1,35 @@
+/* ===================================
+   03  中央配置・左配置 — margin-inline
+   ===================================
+
+   inline = 水平方向 / block = 垂直方向
+   書字方向に依存しない「論理プロパティ」を使おう。
+
+   💡 空欄（: の後ろ）に値を入力してください。
+*/
+
+.container {
+  /* margin-inline: auto で左右中央寄せ */
+  margin-inline: ;
+  /* padding-inline に clamp() でレスポンシブな横余白を
+     → 例: clamp(16px, 4vw, 40px) */
+  padding-inline: ;
+}
+
+.section {
+  /* padding-block: 値 で上下パディングをまとめて指定
+     → 例: 64px */
+  padding-block: ;
+  /* margin-block-end: 値 で下マージンのみを指定
+     → 例: 40px */
+  margin-block-end: ;
+}
+
+.card {
+  /* border-inline-start は「文字の書き始め側」= 左ボーダー
+     → 例: 4px solid #2563eb */
+  border-inline-start: ;
+  /* border-start-start-radius は左上の角丸
+     → 例: 8px */
+  border-start-start-radius: ;
+}
