@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old to New CSS - Practice Index</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --fg: #0f172a;
+      --muted: #64748b;
+      --accent: #3b82f6;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      padding: clamp(24px, 5vw, 64px);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 880px;
+      margin-inline: auto;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 1rem + 2.5vw, 2.5rem);
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      display: block;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      border-color: var(--accent);
+    }
+
+    .card .num {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      margin: 4px 0 6px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Old to New CSS - Practice</h1>
+    <p class="lead">各テーマの実践ページ一覧です。クリックして開いてください。</p>
+
+    <nav class="grid">
+      <a class="card" href="practice/01-clamp/index.html">
+        <div class="num">01</div>
+        <h2>min・clamp</h2>
+        <p>流体タイポグラフィを clamp() で実装する</p>
+      </a>
+      <a class="card" href="practice/02-grid/index.html">
+        <div class="num">02</div>
+        <h2>grid</h2>
+        <p>CSS Grid によるレイアウト</p>
+      </a>
+      <a class="card" href="practice/03-margin-inline/index.html">
+        <div class="num">03</div>
+        <h2>margin-inline</h2>
+        <p>論理プロパティで中央寄せ・余白制御</p>
+      </a>
+      <a class="card" href="practice/04-variables/index.html">
+        <div class="num">04</div>
+        <h2>CSS変数・ネスト</h2>
+        <p>カスタムプロパティとネスト記法</p>
+      </a>
+      <a class="card" href="practice/05-responsive/index.html">
+        <div class="num">05</div>
+        <h2>Container Queries</h2>
+        <p>コンテナクエリでレスポンシブを実装</p>
+      </a>
+    </nav>
+
+    <footer>old-to-new-css</footer>
+  </div>
+</body>
+</html>
