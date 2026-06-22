@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コンテナクエリ</title>
+  <link rel="stylesheet" href="card-container-query.css">
+  <script src="card-container-query.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="page-title">コンテナクエリ</h1>
+    <p class="demo__note">大枠（.layout）は画面幅のメディアクエリで main + sidebar を切り替え、各カード（.card-item）は自分の幅をコンテナクエリで監視して縦積み↔横並びを切り替える</p>
+    <p class="card-size-readout">現在のカード幅: <span id="card-width">-</span> <span class="card-size-readout__hint">（460px で横並びに切り替わる）</span></p>
+  </header>
+
+  <div class="layout">
+    <main class="main">
+      <div class="card-wrapper">
+        <div class="card-item">
+          <article class="card">
+            <a class="card__thumb" href="#">
+              <img src="https://placehold.jp/3d4070/ffffff/640x420.png?text=Article" alt="記事のサムネイル" width="640" height="420">
+            </a>
+            <div class="card__body">
+              <span class="card__category">CSS</span>
+              <h2 class="card__title"><a href="#">コンテナクエリで作るレスポンシブなカードUI</a></h2>
+              <p class="card__text">画面幅ではなく親要素の幅を基準にレイアウトを切り替えることで、同じカードをサイドバーでもメイン領域でも最適に表示できます。</p>
+              <div class="card__meta">
+                <img class="card__avatar" src="https://placehold.jp/3b82f6/ffffff/64x64.png?text=N" alt="" width="64" height="64">
+                <span class="card__author">相原 典佳</span>
+                <time class="card__date" datetime="2026-06-20">2026.06.20</time>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="card-item">
+          <article class="card">
+            <a class="card__thumb" href="#">
+              <img src="https://placehold.jp/4070a0/ffffff/640x420.png?text=Article" alt="記事のサムネイル" width="640" height="420">
+            </a>
+            <div class="card__body">
+              <span class="card__category">Layout</span>
+              <h2 class="card__title"><a href="#">CSS Grid で作る雑誌風レイアウト</a></h2>
+              <p class="card__text">grid-template-areas と span を組み合わせると、複雑な誌面のようなレイアウトも宣言的に組めます。</p>
+              <div class="card__meta">
+                <img class="card__avatar" src="https://placehold.jp/3b82f6/ffffff/64x64.png?text=N" alt="" width="64" height="64">
+                <span class="card__author">相原 典佳</span>
+                <time class="card__date" datetime="2026-06-18">2026.06.18</time>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="card-item">
+          <article class="card">
+            <a class="card__thumb" href="#">
+              <img src="https://placehold.jp/707030/ffffff/640x420.png?text=Article" alt="記事のサムネイル" width="640" height="420">
+            </a>
+            <div class="card__body">
+              <span class="card__category">Typography</span>
+              <h2 class="card__title"><a href="#">clamp() によるタイポグラフィ</a></h2>
+              <p class="card__text">最小・推奨・最大をひとつの関数で指定し、メディアクエリなしでなめらかに文字サイズを変化させます。</p>
+              <div class="card__meta">
+                <img class="card__avatar" src="https://placehold.jp/3b82f6/ffffff/64x64.png?text=N" alt="" width="64" height="64">
+                <span class="card__author">相原 典佳</span>
+                <time class="card__date" datetime="2026-06-15">2026.06.15</time>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="card-item">
+          <article class="card">
+            <a class="card__thumb" href="#">
+              <img src="https://placehold.jp/a04070/ffffff/640x420.png?text=Article" alt="記事のサムネイル" width="640" height="420">
+            </a>
+            <div class="card__body">
+              <span class="card__category">CSS</span>
+              <h2 class="card__title"><a href="#">論理プロパティで多言語対応レイアウト</a></h2>
+              <p class="card__text">margin-inline や padding-block を使うと、書字方向が変わってもレイアウトが破綻しません。</p>
+              <div class="card__meta">
+                <img class="card__avatar" src="https://placehold.jp/3b82f6/ffffff/64x64.png?text=N" alt="" width="64" height="64">
+                <span class="card__author">相原 典佳</span>
+                <time class="card__date" datetime="2026-06-12">2026.06.12</time>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <section class="widget">
+        <h2 class="widget__title">このサイトについて</h2>
+        <p class="widget__text">CSS の新しい機能を実践で学ぶための勉強会用サンプル集です。</p>
+      </section>
+      <section class="widget">
+        <h2 class="widget__title">人気の記事</h2>
+        <ul class="widget__list">
+          <li><a href="#">clamp() でタイポグラフィ</a></li>
+          <li><a href="#">CSS Grid の auto-fit / auto-fill</a></li>
+          <li><a href="#">論理プロパティ margin-inline</a></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <p class="back"><a href="../index.html">&larr; トップに戻る</a></p>
+</body>
+</html>
